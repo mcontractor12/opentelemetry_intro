@@ -1,0 +1,14 @@
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\bin\Debug\net6.0\GrainInterfaces.deps.json
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\bin\Debug\net6.0\GrainInterfaces.dll
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\bin\Debug\net6.0\GrainInterfaces.pdb
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.csproj.AssemblyReference.cache
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.orleans.g.args.txt
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.orleans.g.cs
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.AssemblyInfoInputs.cache
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.AssemblyInfo.cs
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.csproj.CoreCompileInputs.cache
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.dll
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\obj\Debug\net6.0\refint\GrainInterfaces.dll
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.pdb
+D:\dev\playground\OrleansHelloWorld\GrainInterfaces\obj\Debug\net6.0\ref\GrainInterfaces.dll
