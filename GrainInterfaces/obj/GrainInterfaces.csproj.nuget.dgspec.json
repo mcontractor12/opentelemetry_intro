@@ -1,29 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\playground\\OrleansHelloWorld\\GrainInterfaces\\GrainInterfaces.csproj": {}
+    "C:\\Users\\mcontractor\\source\\repos\\opentelemetry_intro\\GrainInterfaces\\GrainInterfaces.csproj": {}
   },
   "projects": {
-    "D:\\dev\\playground\\OrleansHelloWorld\\GrainInterfaces\\GrainInterfaces.csproj": {
+    "C:\\Users\\mcontractor\\source\\repos\\opentelemetry_intro\\GrainInterfaces\\GrainInterfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\playground\\OrleansHelloWorld\\GrainInterfaces\\GrainInterfaces.csproj",
+        "projectUniqueName": "C:\\Users\\mcontractor\\source\\repos\\opentelemetry_intro\\GrainInterfaces\\GrainInterfaces.csproj",
         "projectName": "GrainInterfaces",
-        "projectPath": "D:\\dev\\playground\\OrleansHelloWorld\\GrainInterfaces\\GrainInterfaces.csproj",
-        "packagesPath": "C:\\Users\\jodelac\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\playground\\OrleansHelloWorld\\GrainInterfaces\\obj\\",
+        "projectPath": "C:\\Users\\mcontractor\\source\\repos\\opentelemetry_intro\\GrainInterfaces\\GrainInterfaces.csproj",
+        "packagesPath": "C:\\Users\\mcontractor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mcontractor\\source\\repos\\opentelemetry_intro\\GrainInterfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "D:\\dev\\playground\\NuGet.Config",
-          "D:\\dev\\NuGet.Config",
-          "C:\\Users\\jodelac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\NuGet.Config",
+          "C:\\Users\\mcontractor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "Https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -72,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400-preview.23274.1\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

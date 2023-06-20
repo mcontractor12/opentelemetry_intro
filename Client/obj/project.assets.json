@@ -2649,28 +2649,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jodelac\\.nuget\\packages\\": {}
+    "C:\\Users\\mcontractor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\playground\\OrleansHelloWorld\\Client\\Client.csproj",
+      "projectUniqueName": "C:\\Users\\mcontractor\\source\\repos\\opentelemetry_intro\\Client\\Client.csproj",
       "projectName": "Client",
-      "projectPath": "D:\\dev\\playground\\OrleansHelloWorld\\Client\\Client.csproj",
-      "packagesPath": "C:\\Users\\jodelac\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\playground\\OrleansHelloWorld\\Client\\obj\\",
+      "projectPath": "C:\\Users\\mcontractor\\source\\repos\\opentelemetry_intro\\Client\\Client.csproj",
+      "packagesPath": "C:\\Users\\mcontractor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mcontractor\\source\\repos\\opentelemetry_intro\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "D:\\dev\\playground\\NuGet.Config",
-        "D:\\dev\\NuGet.Config",
-        "C:\\Users\\jodelac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\NuGet.Config",
+        "C:\\Users\\mcontractor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "Https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -2723,7 +2722,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400-preview.23274.1\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

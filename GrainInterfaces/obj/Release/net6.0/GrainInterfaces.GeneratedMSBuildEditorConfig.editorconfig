@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GrainInterfaces
-build_property.ProjectDir = C:\Users\mcontractor\Source\Repos\opentelemetry_intro\GrainInterfaces\
+build_property.ProjectDir = C:\Users\mcontractor\source\repos\opentelemetry_intro\GrainInterfaces\
