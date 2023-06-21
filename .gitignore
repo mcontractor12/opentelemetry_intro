@@ -365,3 +365,13 @@ ppe.env
 *.env
 *.pem
 *.tgz
+
+# Project Specific
+Silo/obj/
+Silo/[Dd]ebug/
+Client/obj/
+Client/[Dd]ebug/
+GrainInterfaces/obj/
+GrainInterfaces/[Dd]ebug/
+Grains/obj/
+Grains/[Dd]ebug/
