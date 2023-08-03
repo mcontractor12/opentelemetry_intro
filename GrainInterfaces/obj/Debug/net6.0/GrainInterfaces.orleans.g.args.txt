@@ -1,40 +1,40 @@
 LogLevel:Warning
-ProjectPath:D:\dev\playground\OrleansHelloWorld\GrainInterfaces\GrainInterfaces.csproj
+ProjectPath:C:\Users\mcontractor\source\repos\opentelemetry_intro\GrainInterfaces\GrainInterfaces.csproj
 ProjectGuid:
 AssemblyName:GrainInterfaces
 OutputType:Library
-TargetPath:D:\dev\playground\OrleansHelloWorld\GrainInterfaces\bin\Debug\net6.0\GrainInterfaces.dll
-CodeGenOutputFile:D:\dev\playground\OrleansHelloWorld\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.orleans.g.cs
-Compile:D:\dev\playground\OrleansHelloWorld\GrainInterfaces\IHelloGrain.cs
-Compile:D:\dev\playground\OrleansHelloWorld\GrainInterfaces\IRandomReceiver.cs
-Compile:D:\dev\playground\OrleansHelloWorld\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.GlobalUsings.g.cs
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.aspnetcore.connections.abstractions\6.0.0\lib\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll
+TargetPath:C:\Users\mcontractor\source\repos\opentelemetry_intro\GrainInterfaces\bin\Debug\net6.0\GrainInterfaces.dll
+CodeGenOutputFile:C:\Users\mcontractor\source\repos\opentelemetry_intro\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.orleans.g.cs
+Compile:C:\Users\mcontractor\source\repos\opentelemetry_intro\GrainInterfaces\IHelloGrain.cs
+Compile:C:\Users\mcontractor\source\repos\opentelemetry_intro\GrainInterfaces\IRandomReceiver.cs
+Compile:C:\Users\mcontractor\source\repos\opentelemetry_intro\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.GlobalUsings.g.cs
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.aspnetcore.connections.abstractions\6.0.0\lib\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\Microsoft.CSharp.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.configuration.abstractions\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.configuration.binder\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.configuration\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\6.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.dependencyinjection\6.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.dependencymodel\6.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyModel.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.features\6.0.0\lib\net6.0\Microsoft.Extensions.Features.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.fileproviders.abstractions\6.0.0\lib\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.hosting.abstractions\6.0.0\lib\netstandard2.1\Microsoft.Extensions.Hosting.Abstractions.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\lib\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.logging\6.0.0\lib\netstandard2.1\Microsoft.Extensions.Logging.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.objectpool\6.0.0\lib\net6.0\Microsoft.Extensions.ObjectPool.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.options.configurationextensions\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.options\6.0.0\lib\netstandard2.1\Microsoft.Extensions.Options.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.extensions.primitives\6.0.0\lib\net6.0\Microsoft.Extensions.Primitives.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.configuration.abstractions\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.configuration.binder\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.configuration\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\6.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.dependencyinjection\6.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.dependencymodel\6.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyModel.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.features\6.0.0\lib\net6.0\Microsoft.Extensions.Features.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.fileproviders.abstractions\6.0.0\lib\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.hosting.abstractions\6.0.0\lib\netstandard2.1\Microsoft.Extensions.Hosting.Abstractions.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\lib\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.logging\6.0.0\lib\netstandard2.1\Microsoft.Extensions.Logging.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.objectpool\6.0.0\lib\net6.0\Microsoft.Extensions.ObjectPool.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.options.configurationextensions\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.options\6.0.0\lib\netstandard2.1\Microsoft.Extensions.Options.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.extensions.primitives\6.0.0\lib\net6.0\Microsoft.Extensions.Primitives.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\Microsoft.VisualBasic.Core.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\Microsoft.VisualBasic.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\Microsoft.Win32.Primitives.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\Microsoft.Win32.Registry.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\mscorlib.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\netstandard.dll
-Reference:C:\Users\jodelac\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.orleans.core.abstractions\3.6.0\lib\netstandard2.0\Orleans.Core.Abstractions.dll
-Reference:C:\Users\jodelac\.nuget\packages\microsoft.orleans.core\3.6.0\lib\net6.0\Orleans.Core.dll
+Reference:C:\Users\mcontractor\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.orleans.core.abstractions\3.6.0\lib\netstandard2.0\Orleans.Core.Abstractions.dll
+Reference:C:\Users\mcontractor\.nuget\packages\microsoft.orleans.core\3.6.0\lib\net6.0\Orleans.Core.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\System.AppContext.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\System.Buffers.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\System.Collections.Concurrent.dll
@@ -84,7 +84,7 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\System.IO.FileSystem.Watcher.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\System.IO.IsolatedStorage.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\System.IO.MemoryMappedFiles.dll
-Reference:C:\Users\jodelac\.nuget\packages\system.io.pipelines\6.0.0\lib\net6.0\System.IO.Pipelines.dll
+Reference:C:\Users\mcontractor\.nuget\packages\system.io.pipelines\6.0.0\lib\net6.0\System.IO.Pipelines.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\System.IO.Pipes.AccessControl.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\System.IO.Pipes.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\System.IO.UnmanagedMemoryStream.dll
@@ -189,4 +189,4 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\System.Xml.XPath.XDocument.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.16\ref\net6.0\WindowsBase.dll
 DefineConstants:TRACE,DEBUG,NET,NET6_0,NETCOREAPP
-InputHash:7792285632f1e7351eb9486ae024d5e3dffec408
+InputHash:760097b55905fa52e3bd21e5ef23388dadb8ab32
