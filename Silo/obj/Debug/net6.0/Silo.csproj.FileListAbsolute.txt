@@ -80,8 +80,6 @@ C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\bin\Debug\net6.0\Open
 C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\bin\Debug\net6.0\OpenTelemetry.Exporter.Console.dll
 C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\bin\Debug\net6.0\OpenTelemetry.Exporter.Geneva.dll
 C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\bin\Debug\net6.0\OpenTelemetry.Extensions.Hosting.dll
-C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\bin\Debug\net6.0\OpenTelemetry.Extensions.PersistentStorage.dll
-C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\bin\Debug\net6.0\OpenTelemetry.Extensions.PersistentStorage.Abstractions.dll
 C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\bin\Debug\net6.0\OpenTelemetry.Instrumentation.AspNetCore.dll
 C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\bin\Debug\net6.0\OpenTelemetry.Instrumentation.Runtime.dll
 C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
@@ -113,3 +111,5 @@ C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\obj\Debug\net6.0\refi
 C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\obj\Debug\net6.0\Silo.pdb
 C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\obj\Debug\net6.0\Silo.genruntimeconfig.cache
 C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\obj\Debug\net6.0\ref\Silo.dll
+C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\bin\Debug\net6.0\OpenTelemetry.PersistentStorage.Abstractions.dll
+C:\Users\mcontractor\source\repos\opentelemetry_intro\Silo\bin\Debug\net6.0\OpenTelemetry.PersistentStorage.FileSystem.dll

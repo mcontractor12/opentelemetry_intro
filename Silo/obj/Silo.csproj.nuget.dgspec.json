@@ -196,7 +196,7 @@
           "dependencies": {
             "Azure.Monitor.OpenTelemetry.Exporter": {
               "target": "Package",
-              "version": "[1.0.0-beta.4, )"
+              "version": "[1.0.0-beta.13, )"
             },
             "Microsoft.AspNetCore": {
               "target": "Package",
@@ -242,27 +242,27 @@
             },
             "OpenTelemetry": {
               "target": "Package",
-              "version": "[1.5.0, )"
+              "version": "[1.5.1, )"
             },
             "OpenTelemetry.Api": {
               "target": "Package",
-              "version": "[1.5.0, )"
+              "version": "[1.5.1, )"
             },
             "OpenTelemetry.Exporter.Console": {
               "target": "Package",
-              "version": "[1.5.0, )"
+              "version": "[1.5.1, )"
             },
             "OpenTelemetry.Exporter.Geneva": {
               "target": "Package",
-              "version": "[1.5.0, )"
+              "version": "[1.5.1, )"
             },
             "OpenTelemetry.Extensions.Hosting": {
               "target": "Package",
-              "version": "[1.5.0, )"
+              "version": "[1.5.1, )"
             },
             "OpenTelemetry.Instrumentation.AspNetCore": {
               "target": "Package",
-              "version": "[1.0.0-rc9.14, )"
+              "version": "[1.5.1-beta.1, )"
             },
             "OpenTelemetry.Instrumentation.Runtime": {
               "target": "Package",
