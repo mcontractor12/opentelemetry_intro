@@ -1,4 +1,10 @@
-﻿using Azure.Monitor.OpenTelemetry.Exporter;
+﻿// ------------------------------------------------------------------------------------------
+// <copyright file="Program.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved
+// </copyright>
+// ------------------------------------------------------------------------------------------
+
+using Azure.Monitor.OpenTelemetry.Exporter;
 using Grains;
 using OpenTelemetry.Exporter.Geneva;
 using OpenTelemetry.Logs;
@@ -54,7 +60,7 @@ await Host.CreateDefaultBuilder(args)
                     ResourceBuilder.CreateDefault()
                     .AddService(serviceName: "OpenTelemetry", serviceVersion: "1.0"))
                 .SetErrorStatusOnException()
-                // !! important to get ..NET traces
+                // !! important to get .NET traces
                 .AddAspNetCoreInstrumentation(opts =>
                 {
                     opts.RecordException = true;

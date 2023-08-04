@@ -6,7 +6,6 @@ OutputType:Library
 TargetPath:C:\Users\mcontractor\source\repos\opentelemetry_intro\GrainInterfaces\bin\Debug\net6.0\GrainInterfaces.dll
 CodeGenOutputFile:C:\Users\mcontractor\source\repos\opentelemetry_intro\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.orleans.g.cs
 Compile:C:\Users\mcontractor\source\repos\opentelemetry_intro\GrainInterfaces\IHelloGrain.cs
-Compile:C:\Users\mcontractor\source\repos\opentelemetry_intro\GrainInterfaces\IRandomReceiver.cs
 Compile:C:\Users\mcontractor\source\repos\opentelemetry_intro\GrainInterfaces\obj\Debug\net6.0\GrainInterfaces.GlobalUsings.g.cs
 Reference:C:\Users\mcontractor\.nuget\packages\microsoft.aspnetcore.connections.abstractions\6.0.0\lib\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
 Reference:C:\Users\mcontractor\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll
@@ -189,4 +188,4 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.20\ref\net
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.20\ref\net6.0\System.Xml.XPath.XDocument.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.20\ref\net6.0\WindowsBase.dll
 DefineConstants:TRACE,DEBUG,NET,NET6_0,NETCOREAPP
-InputHash:d23e77d6c8d9a098a0d9f83ec447d3990e3701ca
+InputHash:a7df2480a90c3621679f579942ee5f8fdc1304f8

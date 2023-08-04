@@ -1,4 +1,10 @@
-﻿namespace Silo.Configuration
+﻿// ------------------------------------------------------------------------------------------
+// <copyright file="AppExporters.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved
+// </copyright>
+// ------------------------------------------------------------------------------------------
+
+namespace Silo.Configuration
 {
     public class AppExporters
     {

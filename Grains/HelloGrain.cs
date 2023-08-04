@@ -27,7 +27,6 @@ public class HelloGrain : Grain, IHelloGrain
         using var activity = _activitySource?.StartActivity($"{nameof(HelloGrain)}.{nameof(SayHello)}");
         _logger.LogInformation($"Say Hello message received: greeting = '{greeting}'");
 
-        //activity?.AddBaggage("baggage", "This is how to pass details between parent and child");
         var baggage = Activity.Current?.GetBaggageItem("ParentBaggage");
         activity?.AddTag("ParentBaggage", baggage);
 

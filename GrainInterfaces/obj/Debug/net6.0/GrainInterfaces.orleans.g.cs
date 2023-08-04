@@ -99,83 +99,6 @@ namespace GrainInterfaces
             return base.InvokeMethodAsync<string>((int)0x7DD31681, new object[]{greeting0});
         }
     }
-
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("OrleansCodeGen", "2.0.0.0"), global::Orleans.CodeGeneration.MethodInvokerAttribute(typeof(global::GrainInterfaces.IRandomReceiver), unchecked((int)0xAB223693)), global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute]
-    internal class OrleansCodeGenRandomReceiverMethodInvoker : global::Orleans.CodeGeneration.IGrainMethodInvoker
-    {
-        public async global::System.Threading.Tasks.Task<object> Invoke(global::Orleans.Runtime.IAddressable grain, global::Orleans.CodeGeneration.InvokeMethodRequest request)
-        {
-            int interfaceId = request.InterfaceId;
-            int methodId = request.MethodId;
-            var arguments = request.Arguments;
-            switch (interfaceId)
-            {
-                case unchecked((int)0xAB223693):
-                {
-                    var casted = ((global::GrainInterfaces.IRandomReceiver)grain);
-                    switch (methodId)
-                    {
-                        default:
-                            ThrowMethodNotImplemented(interfaceId, methodId);
-                            return null;
-                    }
-                }
-
-                default:
-                    ThrowInterfaceNotImplemented(interfaceId);
-                    return null;
-            }
-
-            void ThrowInterfaceNotImplemented(int i) => throw new global::System.NotImplementedException($"InterfaceId: 0x{i:X}");
-            void ThrowMethodNotImplemented(int i, int m) => throw new global::System.NotImplementedException($"InterfaceId: 0x{i:X}, MethodId: 0x{m:X}");
-        }
-
-        public int InterfaceId => unchecked((int)0xAB223693);
-        public ushort InterfaceVersion => 0;
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("OrleansCodeGen", "2.0.0.0"), global::System.SerializableAttribute, global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute, global::Orleans.CodeGeneration.GrainReferenceAttribute(typeof(global::GrainInterfaces.IRandomReceiver))]
-    internal class OrleansCodeGenRandomReceiverReference : global::Orleans.Runtime.GrainReference, global::GrainInterfaces.IRandomReceiver
-    {
-        OrleansCodeGenRandomReceiverReference(global::Orleans.Runtime.GrainReference other) : base(other)
-        {
-        }
-
-        OrleansCodeGenRandomReceiverReference(global::Orleans.Runtime.GrainReference other, global::Orleans.CodeGeneration.InvokeMethodOptions invokeMethodOptions) : base(other, invokeMethodOptions)
-        {
-        }
-
-        OrleansCodeGenRandomReceiverReference(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : base(info, context)
-        {
-        }
-
-        public override int InterfaceId => unchecked((int)0xAB223693);
-        public override ushort InterfaceVersion => 0;
-        public override string InterfaceName => "IRandomReceiver";
-        public override bool IsCompatible(int interfaceId) => interfaceId == unchecked((int)0xAB223693);
-        public override string GetMethodName(int interfaceId, int methodId)
-        {
-            switch (interfaceId)
-            {
-                case unchecked((int)0xAB223693):
-                {
-                    switch (methodId)
-                    {
-                        default:
-                            ThrowMethodNotImplemented(interfaceId, methodId);
-                            return null;
-                    }
-                }
-
-                default:
-                    ThrowInterfaceNotImplemented(interfaceId);
-                    return null;
-            }
-
-            void ThrowInterfaceNotImplemented(int i) => throw new global::System.NotImplementedException($"InterfaceId: 0x{i:X}");
-            void ThrowMethodNotImplemented(int i, int m) => throw new global::System.NotImplementedException($"InterfaceId: 0x{i:X}, MethodId: 0x{m:X}");
-        }
-    }
 }
 
 namespace OrleansGeneratedCode
@@ -186,7 +109,6 @@ namespace OrleansGeneratedCode
         public void Populate(global::Orleans.Metadata.GrainInterfaceFeature feature)
         {
             feature.Interfaces.Add(new global::Orleans.Metadata.GrainInterfaceMetadata(typeof(global::GrainInterfaces.IHelloGrain), typeof(GrainInterfaces.OrleansCodeGenHelloGrainReference), typeof(GrainInterfaces.OrleansCodeGenHelloGrainMethodInvoker), (int)0x4E4688BB));
-            feature.Interfaces.Add(new global::Orleans.Metadata.GrainInterfaceMetadata(typeof(global::GrainInterfaces.IRandomReceiver), typeof(GrainInterfaces.OrleansCodeGenRandomReceiverReference), typeof(GrainInterfaces.OrleansCodeGenRandomReceiverMethodInvoker), unchecked((int)0xAB223693)));
         }
 
         public void Populate(global::Orleans.Metadata.GrainClassFeature feature)
@@ -198,7 +120,6 @@ namespace OrleansGeneratedCode
             feature.AddKnownType("GrainInterfaces.IHelloGrain,GrainInterfaces", "GrainInterfaces.IHelloGrain");
             feature.AddKnownType("System.Threading.Tasks.Task`1", "Task`1'1");
             feature.AddKnownType("System.Threading.Tasks.Task", "Task");
-            feature.AddKnownType("GrainInterfaces.IRandomReceiver,GrainInterfaces", "GrainInterfaces.IRandomReceiver");
         }
     }
 }
