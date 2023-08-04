@@ -2,6 +2,7 @@
 using Grains;
 using OpenTelemetry.Exporter.Geneva;
 using OpenTelemetry.Logs;
+using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using Orleans;
@@ -34,15 +35,16 @@ await Host.CreateDefaultBuilder(args)
         var appTelemetryConn = ctx.Configuration.GetSection(nameof(AppExporters)).Get<AppExporters>();
         var genevaConnString = appTelemetryConn.GenevaConnectionString;
         var appInsightsConnectionString = appTelemetryConn.AppInsightsConnectionString;
+        var genevaMetricsConnectionString = appTelemetryConn.GenevaMetricsConnectionString;
 
         services.AddControllers();
         services.AddOpenTelemetry()
         .WithTracing(builder =>
         {
             builder
-                // Adds traces for azure third-party calls
-                .AddSource("*")
-                .AddSource("Azure.*")
+                // Add sources of traces
+                .AddSource("*") // adds all traces
+                .AddSource("Azure.*") // Adds traces for azure third-party calls
                 .AddSource("OpenTelemtry.*")
                 .AddSource(
                     typeof(AppController).Namespace,
@@ -52,6 +54,7 @@ await Host.CreateDefaultBuilder(args)
                     ResourceBuilder.CreateDefault()
                     .AddService(serviceName: "OpenTelemetry", serviceVersion: "1.0"))
                 .SetErrorStatusOnException()
+                // !! important to get ..NET traces
                 .AddAspNetCoreInstrumentation(opts =>
                 {
                     opts.RecordException = true;
@@ -68,9 +71,7 @@ await Host.CreateDefaultBuilder(args)
                         activity.SetStatus(ActivityStatusCode.Error);
                     };
                 })
-
-                // Exports Traces to Console
-                .AddConsoleExporter();
+                .AddConsoleExporter(); // Exports Traces to Console
 
             // Export Traces to Application Insights
             if (!string.IsNullOrWhiteSpace(appInsightsConnectionString))
@@ -81,7 +82,6 @@ await Host.CreateDefaultBuilder(args)
                 });
 
             }
-
             // Export Traces to Geneva
             if (!string.IsNullOrWhiteSpace(genevaConnString))
             {
@@ -90,7 +90,33 @@ await Host.CreateDefaultBuilder(args)
                     opts.ConnectionString = genevaConnString;
 
                 });
+            }
+        })
+        .WithMetrics(builder =>
+        {
+            builder
+                .AddAspNetCoreInstrumentation() // Adds basic .NET metrics
+                .AddRuntimeInstrumentation() // Adds basic runtime metrics
+                .AddMeter("AppRequests") // Add name of the meter you created so it has the source
+                .AddConsoleExporter(); // Exports Metrics to console
 
+            // Export Metrics to Application Insights
+            if (!string.IsNullOrWhiteSpace(appInsightsConnectionString))
+            {
+                builder.AddAzureMonitorMetricExporter(opts =>
+                {
+                    opts.ConnectionString = appInsightsConnectionString;
+                });
+
+            }
+            // Export Metrics to Geneva
+            if (!string.IsNullOrWhiteSpace(genevaMetricsConnectionString))
+            {
+                builder.AddGenevaMetricExporter(opts =>
+                {
+                    opts.ConnectionString = genevaMetricsConnectionString;
+
+                });
             }
         });
     })
@@ -125,7 +151,6 @@ await Host.CreateDefaultBuilder(args)
                      appConn.ConnectionString = appInsightsConnectionString;
                  });
              }
-
 
              //Export Logs to Console
              options.AddConsoleExporter();
