@@ -72,6 +72,16 @@ await Host.CreateDefaultBuilder(args)
                         }
                         activity.SetTag("response.Length", response?.ContentLength);
                     };
+
+                    opts.EnrichWithHttpRequest = (activity, incomingRequest) =>
+                    {
+                        var correlationId = incomingRequest.Headers["x-ms-correlation-request-id"].Any()
+                                    ? string.Join(", ", incomingRequest.Headers["x-ms-correlation-request-id"])
+                                    : Guid.NewGuid().ToString();
+
+                        activity.AddBaggage("correlationId", correlationId);
+                    };
+
                     opts.EnrichWithException = (activity, ex) =>
                     {
                         activity.SetStatus(ActivityStatusCode.Error);
@@ -160,6 +170,7 @@ await Host.CreateDefaultBuilder(args)
 
              //Export Logs to Console
              options.AddConsoleExporter();
+             options.AddProcessor(new LogProcessor());
              options.IncludeFormattedMessage = true;
              options.IncludeScopes = true;
              options.ParseStateValues = true;
