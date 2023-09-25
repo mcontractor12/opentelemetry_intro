@@ -4,6 +4,7 @@
 // </copyright>
 // ------------------------------------------------------------------------------------------
 
+using Azure.Identity;
 using Azure.Monitor.OpenTelemetry.Exporter;
 using Grains;
 using OpenTelemetry.Exporter.Geneva;
@@ -56,6 +57,7 @@ await Host.CreateDefaultBuilder(args)
                     typeof(AppController).Namespace,
                     typeof(HelloGrain).Namespace,
                     typeof(Program).Assembly.GetName().Name)
+                .AddProcessor(new SpanProcessor()) // enriching spans
                 .SetResourceBuilder(
                     ResourceBuilder.CreateDefault()
                     .AddService(serviceName: "OpenTelemetry", serviceVersion: "1.0"))
@@ -80,6 +82,7 @@ await Host.CreateDefaultBuilder(args)
                                     : Guid.NewGuid().ToString();
 
                         activity.AddBaggage("correlationId", correlationId);
+                        activity.AddTag("correlationId", correlationId);
                     };
 
                     opts.EnrichWithException = (activity, ex) =>
@@ -92,9 +95,10 @@ await Host.CreateDefaultBuilder(args)
             // Export Traces to Application Insights
             if (!string.IsNullOrWhiteSpace(appInsightsConnectionString))
             {
-                builder.AddAzureMonitorTraceExporter(opts =>
+                builder.AddAzureMonitorTraceExporter(appConn =>
                 {
-                    opts.ConnectionString = appInsightsConnectionString;
+                    appConn.ConnectionString = $"InstrumentationKey={appInsightsConnectionString}";
+                    appConn.Credential = new DefaultAzureCredential();
                 });
 
             }
@@ -119,9 +123,10 @@ await Host.CreateDefaultBuilder(args)
             // Export Metrics to Application Insights
             if (!string.IsNullOrWhiteSpace(appInsightsConnectionString))
             {
-                builder.AddAzureMonitorMetricExporter(opts =>
+                builder.AddAzureMonitorMetricExporter(appConn =>
                 {
-                    opts.ConnectionString = appInsightsConnectionString;
+                    appConn.ConnectionString = $"InstrumentationKey={appInsightsConnectionString}";
+                    appConn.Credential = new DefaultAzureCredential();
                 });
 
             }
@@ -164,7 +169,8 @@ await Host.CreateDefaultBuilder(args)
              {
                  options.AddAzureMonitorLogExporter(appConn =>
                  {
-                     appConn.ConnectionString = appInsightsConnectionString;
+                     appConn.ConnectionString = $"InstrumentationKey={appInsightsConnectionString}";
+                     appConn.Credential = new DefaultAzureCredential();
                  });
              }
 

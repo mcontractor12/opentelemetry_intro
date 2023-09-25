@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.10.1" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
@@ -23,14 +24,14 @@
     <PackageReference Include="Microsoft.Orleans.OrleansServiceBus" Version="3.6.0" />
     <PackageReference Include="Microsoft.Orleans.Server" Version="3.6.0" />
 
-	<PackageReference Include="OpenTelemetry" Version="1.5.1" />
-	<PackageReference Include="OpenTelemetry.Api" Version="1.5.1" />
-	<PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.5.1" />
-	<PackageReference Include="OpenTelemetry.Exporter.Geneva" Version="1.5.1" />
-	<PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.5.1" />
-	<PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.5.0" />
+	<PackageReference Include="OpenTelemetry" Version="1.6.0" />
+	<PackageReference Include="OpenTelemetry.Api" Version="1.6.0" />
+	<PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.6.0" />
+	<PackageReference Include="OpenTelemetry.Exporter.Geneva" Version="1.6.0" />
+	<PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.6.0" />
+	<PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.5.1" />
 	<PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.5.1-beta.1" />
-	<PackageReference Include="Azure.Monitor.OpenTelemetry.Exporter" Version="1.0.0-beta.13" />
+	<PackageReference Include="Azure.Monitor.OpenTelemetry.Exporter" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
